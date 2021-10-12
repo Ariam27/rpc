@@ -6,7 +6,7 @@ A simple implementation of RPC (Remote Procedural Call) in python.
 
 ```python
 #server implementation
-from rpc.server import Server
+from rpc import Server
 
 server = Server("localhost", 3000)
 
@@ -27,7 +27,7 @@ server.run()
 
 ```python
 #client implementation
-from rpc.client import Client
+from rpc import Client
 
 client = Client("localhost", 3000)
 client.connect()
